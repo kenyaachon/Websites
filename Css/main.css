@@ -1,0 +1,567 @@
+@charset "utf-8";
+html, body {
+	background-color: #000000;
+}
+
+body {
+	margin-left: 5%;
+	margin-right: 5%;
+	border-color: white;
+	color: white;
+}
+h1{
+	text-align: center;
+}
+#bottom{
+	color: white;
+	border: thick;
+}
+header > p{
+	align: center;
+	font-weight:bold;
+}
+#Login, #Signup {
+	align-content: right;
+	padding: 6px;
+	background-color:#0E9536;
+	border-color: black;
+}
+
+table {
+	font-family: arial, sans-serif;
+	width: 40%
+}
+td, th {
+	border: 1px solid #CD8011;
+	padding: 6px;
+}
+tr:nth-child(even) {
+	background-color: #6969D0;
+}
+tr:nth-child(odd) {
+	background-color: #C83638;
+}
+footer {
+	padding: 6px;
+	margin-bottom: -2px;
+}
+
+#dropdownmenu {
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	background:#231A1B;
+	
+}
+li {
+	float: left;
+}
+.navbar a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover, .dropdown: hover .dropbtn{
+	background-color: #4BFD8;
+}
+
+li.dropdown {
+	display:inline-block;
+}
+
+.dropdowncontent {
+	displya: none;
+	position: absolute;
+	background-color: #D5CFCF;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px #9F9B9B;
+}
+
+.dropdowncontent a{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown a:hover, .link:hover {
+	background: #43B5C8;	
+}
+
+.show {
+	display: block;
+}
+#mpInput {
+	padding: 10px;
+}
+.text-center:hover{
+	background: red;
+	cursor: pointer;
+}
+.text-center {
+	border: thick;
+	padding-top: 12px;
+}
+.navbar {
+	background: #131111;
+	color: white;
+}
+
+
+
+body a {
+	color: white;
+}
+
+#spbutton, #spbutton2 {
+	background: black;
+	color: white;
+	padding: 10px;
+	border-color: white; 
+}
+
+#spbutton2:hover {
+	border-color: red;
+	color: red;
+}
+
+div p a {
+	color: white;
+}
+
+/*For the hover page*/
+.box {
+	text-align: center;
+}
+
+#bottom a {
+	color: #F3EFEF;	
+	text-decoration: none;
+}
+#bottom .fa:hover{
+	font-size: 2.4em;
+}
+#bottom a:visted {
+	color: #6124C3;
+}
+
+article .container{
+	width: 500px;
+	border: thick #16B1CB solid;
+}
+
+form p{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.glyphicon-remove {
+	color: black;
+	font-size: 1.3em;
+}
+
+.fa {
+	font-size: 1.7em;
+}
+
+.fa-twitter {
+	color: #39A0CB;
+}
+
+.fa-facebook {
+	background: #346EC8;
+	height: 37px;
+	width: 37px;
+	padding-top: 6px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.fa-snapchat {
+	color: yellow;
+}
+
+.fa-youtube {
+	color: red;
+}
+.fa-instagram {
+	color:  black;
+}
+.fa-linkedin {
+	background-color: blue;
+	height: 37px;
+	width: 37px;
+	padding-top: 6px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+footer div: first-child{
+	padding-bottom: 5px !important;
+	margin-bottom: 6 !important;
+}
+
+.fa-eye, .fa-map, fa-window-close {
+	color: white;
+}
+
+#gear, #search1 {
+	background: black;
+	border: black;
+	padding-top: 10px;
+}
+
+.fa-gear:hover, #search1:hover {
+	color:red;
+}
+footer div {
+	background: #464646;
+	text-align: center;
+}
+
+
+/*For the big banner on the main webpage*/
+#bigbanner .jumbotron {
+	color: white;
+	font-weight: 400;
+	background-image: url(../Images/Safari-Park-Africa-Photo.jpg);
+	background-size: 1250px 300px;
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 300px;
+}
+
+.copy1 a:hover{
+	text-decoration: underline;
+	color: #234AA7;
+}
+
+.preview {
+	display: none;
+	background: white;
+	border: solid thin black;
+	border-radius: 8px;
+	font-size: 12px;
+	color: black;
+	position: absolute;
+    top: -100px;
+    left: 110px;
+    z-index: 100;
+	padding: 5px;
+}
+
+
+.preview {
+    visibility: visible;
+    -webkit-animation: fadeIn fadeOut 1s;
+    animation: fadeIn fadeOut 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+/* Add animation (fade Out the popup) */
+@-webkit-keyframes fadeOut {
+    from {opacity: 1;} 
+    to {opacity: 0;}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+.preview .press{
+	background: white !important
+;
+}
+.press {
+	background: black;
+	border: thin solid black;
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+.press:hover, #popupsubmit:hover {
+	background-color: black !important;
+	color: red;
+}
+
+
+/*Content for designing the search button*/
+#SearchBar {
+	padding-left: 39%;
+	display: none;
+	animation: fadeIn 1s;
+	border: solid thin black;
+}
+#SearchBar input{
+	border-radius: 15px;
+	width: 300px;
+}
+#SearchBar button {
+	background-color: black;
+	color: white;
+	border-color: white;
+	border-radius: 15px;
+	height: 35px;
+}
+#SearchBar button:hover {
+	border-color: red;
+	color: red;
+}
+
+.form-control:focus {
+	border-color: red;
+}
+
+
+/*Shows the top bar*/
+.progress {
+	position: relative;
+	width: 100%;
+	height: 2px;
+	background-color: black;
+}
+
+.progress-bar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: red;
+}
+
+/*should show a login box */
+#loginbox {
+	display: none;
+	position: relative;
+	height: 300px;
+	width: 400px;
+	box-shadow: #8F1A1C;
+	left: 35%;
+	bottom: 40%;
+	z-index: 4000;
+}
+#loginbox button {
+	position: relative;
+	background-color: red;
+	border: black;
+	color: white;
+	left: 45%;
+	border-radius: 2px;
+	padding: 3px 5px 4px 4px;
+}
+#loginbox div a, #loginbox p  {
+	position: relative;
+	left: 30%;
+}
+
+/*
+footer, header, main {
+	opacity: .5;
+}*/
+
+#presentation ul{
+	list-style-type: none;
+	text-align: left;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+  }
+  
+.container {
+	max-width: 100%;
+	min-width: 100%;
+}
+
+main article h3 {
+	text-align: center;
+}
+
+.item img {
+	max-height: 600px;
+	min-height: 600px;
+}
+
+/*Changes the color of little slideshow indicators*/
+.carousel-indicators li {
+	background: red;
+}
+
+
+
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.2); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	animation: fadeIn 1s;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid red;
+    width: 25%;
+	box-shadow: red;
+	color: black;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+fieldset { 
+	padding:0; 
+	border:0; 
+	margin-top:25px; 
+	
+}
+
+#googletab, #facebooktab {
+	color: white;
+	width: 65%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	font-size: 12px;
+	margin-left: 20%;
+	margin-bottom: 10px;
+}
+
+#googletab {
+	background: red;
+	padding: 5% 10% 5% 10%;
+}
+#facebooktab {
+	background: #346EC8;
+	padding: 3% 7% 2%;
+}
+
+
+/*For the text on Remember and forget me*/
+#RememberMe, #ForgotPassword, #Remembercheck{
+	display: inline;
+}
+
+#RememberMe.text {
+	padding-left: 5%;
+}
+
+#ForgotPassword {
+	padding-left: 25%;
+}
+
+label, input { 
+	display:block; 
+}
+input.text { 
+	margin-bottom:12px; 
+	width:95%; 
+	padding: .4em; 
+}
+
+fieldset .fa-facebook, fieldset .fa-google {
+	font-size: 1.2em;
+}
+/*For the button inside the login dialog*/
+#popupsubmit, #contactsubmit {
+	padding-left: 12px;
+	padding-right: 12px;
+	margin-left: 35%;
+}
+/*Styling for the religion page*/
+.Ncountry, .Scountry, .Ecountry, .Wcountry {
+	display: block;
+	padding-left: 7%;
+	padding-bottom: 2%;
+	text-align: center;
+	border: thin solid #6F6D6D;
+}
+
+.Ncountry h3, .Scountry h3, .Ecountry h3, .Wcountry h3 {
+	padding-right: 13%;
+}
+
+.Ncountry a, .Scountry a, .Ecountry a, .Wcountry a{
+	
+	width: 85%;
+	height: 40px;
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+.Ncountry a{
+	background-color: #D50303;
+}
+
+.Scountry a {
+	background-color: #14C138;
+}
+.Wcountry a {
+	background-color: #0A6AC3;
+}
+
+
+.Ecountry a {
+	background-color: #D48D18;
+}
+
+.Ecountry a:hover, .Wcountry a:hover, .Scountry a:hover, .Ncountry a:hover {
+	opacity: .7;
+}
+
+#contactbox {
+	display: block;
+}
+#contactbtn {
+	background: black;
+	border: solid thin white;
+	color: white;
+}
+
+#contactbtn:hover {
+	border: red solid thin;
+	color: red;
+}
+
+
+#contactbox input, #contactbox textarea {
+	padding-right: 30%;
+}
