@@ -5,14 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Africa</title>
-<link href="../Css/main3.css" rel="stylesheet" type="text/css">
-<link href="../Css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="main3.css" rel="stylesheet" type="text/css">
+<link href="bootstrap.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
 
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <link href="Css/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">  <link href="Css/main.css" rel="stylesheet" type="text/css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -21,13 +19,6 @@
 <![endif]-->
 </head>
 <body>
-    <!--<header>
-    <div class="navbar-right">
-    	<input type="text" class="form-control" placeholder="Username">
-        <input type="text" class="form-control" placeholder="Password">
-        <button type="submit" class="btn btn-default">Submit</button>
-    </div>
-    </header> -->
 	<header id="top1" class="contentclose">
     <nav class="navbar navbar-default">
   <div class="container-fluid"> 
@@ -51,7 +42,7 @@
       <form class="navbar-form navbar-right" role="search">
         <button id ="spbutton2" type="button" class="btn btn-default">Login</button>
         <button id="search1" type="button"><i class="fa fa-search"></i></button>
-        <button id="gear"><i class="fa fa-gear"></i></button>
+        <button id="gear" type="button"><i class="fa fa-gear"></i></button>
         <!--When the gear is pressed the login button and sign up button should pop-->
         
         <!--<button type="submit" class="btn btn-default">SignUp</button>-->
@@ -71,17 +62,10 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Region<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">South Africa</a> </li>
-            <li><a href="#">North Africa</a> </li>
-            <li><a href="#">West Africa</a> </li>
-            <!--<li role="separator" class="divider"></li>-->
-            <li><a href ="#">East Africa</a></li>
-          </ul>
+        <li class="dropdown"> <a href="Region.html">Region</a>
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right">
         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Culture<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="Food.html">Food</a></li>
@@ -201,6 +185,40 @@
         </div>
     </article>
     </main>
+    <div id="mySidenav" class="sidenav">
+  <a href="#" id="settingsclose" class="closebtn">&times;</a>
+  <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Ablackychan1963%3Aplaylist%3A6nK08GmbzVEcPkVrTi7ptr" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="comtact.html">Contact</a>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+  	      <span class="close">&times;</span>
+      <form>
+    <fieldset>
+      <a id="facebooktab" href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook Login</a>
+      <a id="googletab" href="#"><i class="fa fa-google" aria-hidden="true"></i>&nbsp;Google Login</a>
+      <label for="email">Email</label>
+      <input type="text" name="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all">
+      <label for="password">Password</label>
+      <input type="password" name="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all">
+ 
+      <!-- Allow form submission with keyboard without duplicating the dialog button -->
+      <div class="row">
+      <label id="RememberMe"><input id = "Remembercheck" type="checkbox" name="RememberMe" value = "Remember"> &nbsp;Remember Me</label>
+      <a id="ForgotPassword" href="#">Forgot password</a>
+     </div>
+      <button id="popupsubmit" type="submit" class="btn btn-default">Submit</button>
+    </fieldset>
+  </form>
+  </div>
+
+</div>
 	<footer id="bottom" role="contentinfo" class="contentclose">
     	<div class="bttm">
     	<div class="col-md-12">
@@ -215,15 +233,6 @@
          	</nav>
          </div>
         <div class="col-md-3">
-        	<!-- <ul style = "list-style-type:none">
-            	<li><h3>Head</h3></li>
-                <br>
-            	<li><a href="#">Link1</a></li>
-                <li><a href="#">Link2</a></li>
-                <br>
-				<li><a href="#">Link3</a></li>
-                <li><a href="#">Link4</a></li>
-            </ul> -->
             <h3>Head</h3>
             <p><a href="#">Link1<br></a></p>
             <p><a href="#">Link1</a></p>
@@ -231,15 +240,6 @@
             <p><a href="#">Link1</a></p>
         </div>
         <div class="col-md-3">
-            <!--<ul style = "list-style-type:none">
-                 <li><h3>Head</h3></li>
-                 <br>
-                 <li><a href="#">Link1</a></li>
-                 <li><a href="#">Link2</a></li>
-                 <br>
-                 <li><a href="#">Link3</a></li>
-                 <li><a href="#">Link4</a></li>
-            </ul>-->
             <h3>Head</h3>
             <p><a href="#">Link1<br></a></p>
             <p><a href="#">Link1</a></p>
@@ -247,15 +247,6 @@
             <p><a href="#">Link1</a></p>
         </div>
         <div class="col-md-3">
-        	<!--<ul style = "list-style-type:none">
-            	<li><h3>Head</h3></li>
-                <br>
-            	<li><a href="#">Link1</a></li>
-                <li><a href="#">Link2</a></li>
-                <br>
-				<li><a href="#">Link3</a></li>
-                <li><a href="#">Link4</a></li>
-            </ul>-->
             <h3>Head</h3>
             <p><a href="#">Link1<br></a></p>
             <p><a href="#">Link1</a></p>
@@ -263,15 +254,7 @@
             <p><a href="#">Link1</a></p>
         </div>
 		<div class="col-md-3">
-        	<!--<ul style = "list-style-type:none">
-            	<li><h3>Head</h3></li>
-                <br>
-            	<li><a href="#">Link1</a></li>
-                <li><a href="#">Link2</a></li>
-                <br>
-				<li><a href="#">Link3</a></li>
-                <li><a href="#">Link4</a></li>
-            </ul> -->
+        	
             <h3>Head</h3>
             <p><a href="#">Link1<br></a></p>
             <p><a href="#">Link1</a></p>
@@ -280,30 +263,7 @@
         </div>        
         </div>
     </footer>
-       <!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-  	      <span class="close">&times;</span>
-      <form>
-    <fieldset>
-      <a id="facebooktab" href="#">Login with Facebook</a>
-      
-      <a id="googletab" href="#">Login with Google</a>
-      <label for="email">Email</label>
-      <input type="text" name="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all">
-      <label for="password">Password</label>
-      <input type="password" name="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all">
- 
-      <!-- Allow form submission with keyboard without duplicating the dialog button -->
-      <label id="Remember Me"><input type="checkbox" name="Remember me" value = "Remember">Remember Me</label>
-      <a id="ForgotPassword" href="#">Forgot password</a>
-    </fieldset>
-  </form>
-  </div>
-
-</div>
+       
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="behavior.js" ></script>
