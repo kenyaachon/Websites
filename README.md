@@ -7,6 +7,6 @@ It has information on:
   Food
   Religion
   Music
-  Flags
+  Flags. 
 Includes google maps and slideshows
 All this website needs is specific information for each country in Africa
