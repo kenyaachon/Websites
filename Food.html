@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>Food</title>
-<link href="../Css/main3.css" rel="stylesheet" type="text/css">
-<link href="../Css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="main3.css" rel="stylesheet" type="text/css">
+<link href="bootstrap.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link href="Css/main.css" rel="stylesheet" type="text/css">
 </head>
@@ -32,7 +32,7 @@
       <form class="navbar-form navbar-right" role="search">
         <button id = "spbutton2" type="button" class="btn btn-default">Login</button>
         <button id="search1" type="button"><i class="fa fa-search"></i></button>
-        <button id="gear"><span class="fa fa-gear"></span></button>
+        <button id="gear" type="button"><span class="fa fa-gear"></span></button>
         <!--When the gear is pressed the login button and sign up button should pop-->
         
         <!--<button type="submit" class="btn btn-default">SignUp</button>-->
@@ -52,17 +52,10 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Region<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">South Africa</a> </li>
-            <li><a href="#">North Africa</a> </li>
-            <li><a href="#">West Africa</a> </li>
-            <!--<li role="separator" class="divider"></li>-->
-            <li><a href ="#">East Africa</a></li>
-          </ul>
+        <li class="dropdown"> <a href="Region.html">Region</a>
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right">
         <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Culture<span class="caret"></span></a>
          <ul class="dropdown-menu">
             <li><a href="Food.html">Food</a></li>
@@ -93,7 +86,40 @@
       </span>
     </div>
 </header>
+	<div id="mySidenav" class="sidenav">
+  <a href="#" id="settingsclose" class="closebtn">&times;</a>
+  <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Ablackychan1963%3Aplaylist%3A6nK08GmbzVEcPkVrTi7ptr" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="comtact.html">Contact</a>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
+  <!-- Modal content -->
+  <div class="modal-content">
+  	      <span class="close">&times;</span>
+      <form>
+    <fieldset>
+      <a id="facebooktab" href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook Login</a>
+      <a id="googletab" href="#"><i class="fa fa-google" aria-hidden="true"></i>&nbsp;Google Login</a>
+      <label for="email">Email</label>
+      <input type="text" name="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all">
+      <label for="password">Password</label>
+      <input type="password" name="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all">
+ 
+      <!-- Allow form submission with keyboard without duplicating the dialog button -->
+      <div class="row">
+      <label id="RememberMe"><input id = "Remembercheck" type="checkbox" name="RememberMe" value = "Remember"> &nbsp;Remember Me</label>
+      <a id="ForgotPassword" href="#">Forgot password</a>
+     </div>
+      <button id="popupsubmit" type="submit" class="btn btn-default">Submit</button>
+    </fieldset>
+  </form>
+  </div>
+
+</div>
 	<footer id="bottom" role="contentinfo">
     	<div class="bttm">
     	<div class="col-md-12">
@@ -200,7 +226,7 @@
 
 </div>
     <script src="behavior.js" ></script>
-	<script src="../js/jquery-1.11.3.min.js"></script>
-	<script src="../js/bootstrap.js"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>
